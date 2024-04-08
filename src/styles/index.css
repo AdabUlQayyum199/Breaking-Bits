@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.coming_soon {
+  height: 100vh;
+  width: 100vw;
+  background: url("../assets/images/Clock-Timer.png") no-repeat top/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coming_soon_timer {
+  color: #fafdf9;
+  position: relative;
+  top: -5rem;
+  left: -1rem;
+  display: flex;
+  gap: 3rem;
+  transform: rotateZ(3.5deg);
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 20px #36d74f, 0px 0px 20px #36d74f;
+}
+
+#hours {
+  font-size: 100px;
+}
+#minutes {
+  position: relative;
+  left: 10px;
+  font-size: 95px;
+}
+#seconds {
+  position: relative;
+  top: 5px;
+  font-size: 90px;
+}
+#play_button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #26f32e;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0px 0px 20px #000, 0px 0px 20px #000;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
