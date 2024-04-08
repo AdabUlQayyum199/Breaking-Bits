@@ -18,11 +18,12 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .coming_soon_timer {
   color: #fafdf9;
   position: relative;
-  top: -5rem;
+  top: -4rem;
   left: -1rem;
   display: flex;
   gap: 3rem;
@@ -34,16 +35,21 @@ code {
 
 #hours {
   font-size: 100px;
+  position: relative;
+  top: -15px;
+  left: -10px;
 }
 #minutes {
   position: relative;
-  left: 10px;
-  font-size: 95px;
+  left: 7px;
+  font-size: 92px;
+  top: -7px;
 }
 #seconds {
   position: relative;
   top: 5px;
-  font-size: 90px;
+  font-size: 87px;
+  top: -3px;
 }
 #play_button {
   align-items: center;
@@ -74,4 +80,101 @@ code {
   position: absolute;
   top: 2rem;
   left: 2rem;
+}
+.partner_logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 20px 0;
+}
+.partner_logos img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 10px;
+  filter: drop-shadow(0px 1px 6px #fff);
+}
+
+.social_icons {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.social_icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media Queries ------------------------------------------------ */
+
+@media only screen and (max-width: 1600px) {
+  .coming_soon_timer {
+    top: -7.5rem;
+  }
+  #hours {
+    font-size: 90px;
+  }
+  #minutes {
+    font-size: 85px;
+    left: 5px;
+  }
+  #seconds {
+    font-size: 75px;
+    right: 5px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  #seconds {
+    right: 13px;
+  }
+  #hours {
+    position: relative;
+    right: -10px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .coming_soon_timer {
+    gap: 2rem;
+    top: -7rem;
+  }
+  #minutes {
+    font-size: 78px;
+    top: 5px;
+    left: 0;
+  }
+  #seconds {
+    right: 0;
+    font-size: 72px;
+    top: 9px;
+  }
+  #hours {
+    top: -5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .partner_logos {
+    gap: 1rem;
+  }
+  .partner_logos img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .partner_logos img {
+    width: 80px;
+    height: 80px;
+  }
+  .partner_logos {
+    gap: 0rem;
+  }
 }
